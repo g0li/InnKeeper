@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityFragment">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CityFragment">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".18">
+
+            <TextView
+                android:id="@+id/detailsVLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Details"
+                android:textColor="#fff"
+                app:fontFamily="@font/kite_one" />
+
+            <TextView
+                android:id="@+id/attractionsVLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Attractions"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                app:fontFamily="@font/kite_one" />
+
+            <TextView
+                android:id="@+id/placesVLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Places"
+                android:textColor="#fff"
+                app:fontFamily="@font/kite_one" />
+
+            <TextView
+                android:id="@+id/hotelsVLV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="Hotels"
+                android:textColor="#fff"
+                app:fontFamily="@font/kite_one" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Kharghar"
+            app:fontFamily="@font/shadows_into_light_two"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/placesToVisit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="21"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                app:fontFamily="@font/shadows_into_light_two" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="places to visit"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                app:fontFamily="@font/shadows_into_light_two" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Maharashtra, India"
+            android:textStyle="bold"
+            app:fontFamily="@font/shadows_into_light_two"
+            app:layout_constraintStart_toStartOf="@+id/cityName"
+            app:layout_constraintTop_toBottomOf="@+id/cityName" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:includeFontPadding="true"
+            android:text="Kharghar is smart city one of the nodes of Mumbai metropolis situated at the Northern most tip of Raigad district. It was developed by the City and Industrial Development Corporation i.e. CIDCO."
+            android:textSize="12sp"
+            app:fontFamily="@font/kite_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/stateCountry"
+            app:layout_constraintTop_toBottomOf="@+id/stateCountry" />
+
+        <TextView
+            android:id="@+id/readmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Read More"
+            app:fontFamily="@font/kite_one"
+            app:layout_constraintEnd_toEndOf="@+id/cityName"
+            app:layout_constraintStart_toStartOf="@+id/stateCountry"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/attractions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/readmore"
+            app:layout_constraintTop_toBottomOf="@+id/readmore" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintStart_toStartOf="@+id/attractions"
+            app:layout_constraintTop_toBottomOf="@+id/attractions">
+
+            <LinearLayout
+                android:id="@+id/cafeLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/cafeCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/cafeImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cafe" />
+                </android.support.design.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/cafeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cafe"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/kite_one" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/restCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/restImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_food" />
+                </android.support.design.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/restTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Restaurant"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/kite_one" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shopLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/shopCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/shopImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cart" />
+                </android.support.design.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/shopTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Shop"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/kite_one" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/eventCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/eventImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_map" />
+                </android.support.design.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/eventTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Events"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/kite_one" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hotels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
